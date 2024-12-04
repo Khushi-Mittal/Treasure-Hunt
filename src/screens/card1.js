@@ -31,7 +31,7 @@ function Card1() {
         
         const mail = localStorage.getItem("userEmail");
         console.log(mail);
-        const response = await fetch("http://localhost:8000/api/updateUser", {
+        const response = await fetch("https://treasurehunt-backend.onrender.com/api/updateUser", {
             method: 'POST',
             headers: {
                 'Content-Type': "application/json",

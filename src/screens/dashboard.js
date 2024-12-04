@@ -11,7 +11,7 @@ function Dash() {
 
     useEffect(() => {
         const Data = async () => {
-            const response = await fetch("http://localhost:8000/api/dashboard", {
+            const response = await fetch("https://treasurehunt-backend.onrender.com/api/dashboard", {
                 method: "GET",
                 headers: {
                     'Content-Type': "application/json"

@@ -9,7 +9,7 @@ function SignUp() {
     const [data,setData]=useState({name:"",email:"",pswd:""})
     const handleSubmit=async(e)=>{
             e.preventDefault();
-            const response=await fetch("http://localhost:8000/api/createUser",{
+            const response=await fetch("https://treasurehunt-backend.onrender.com/api/createUser",{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json',

@@ -7,7 +7,7 @@ import '../styling/home.css';
 function Home() {
     const [arr, setArr] = useState();
     const loadData = async () => {
-        let response = await fetch("http://localhost:8000/api/leaderboard", {
+        let response = await fetch("https://treasurehunt-backend.onrender.com/api/leaderboard", {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json',
