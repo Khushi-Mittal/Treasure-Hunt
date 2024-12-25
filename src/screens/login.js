@@ -38,7 +38,7 @@ function Login() {
     }
 
     const dashboard=()=>{
-        if(data.email==="priya@gmail.com" && data.pswd==="priya123"){
+        if(data.email==="khushi@gmail.com" && data.pswd==="khushi123"){
             navigate('/dashboard');
         }
         else{
