@@ -18,12 +18,13 @@ function SignUp() {
             });
             const json= await response.json();
             console.log(json);
-            if(!json.success){
-                alert("Enter valid credentials.");
-            }
-            else{
-                setData({name:"", email:"", pswd:""})
-            }
+            // if(!json.success){
+            //     alert("Enter valid credentials.");
+            // }
+            // else{
+            //     setData({name:"", email:"", pswd:""})
+            // }
+            setData({name:"", email:"", pswd:""})
     }
     const handleChange=(event)=>{
         setData({...data,[event.target.name]:event.target.value})

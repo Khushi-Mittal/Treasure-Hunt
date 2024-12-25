@@ -22,15 +22,19 @@ function Login() {
         })
         const json = await response.json();
         console.log(json);
-        if (!json.success) {
-            alert("Enter valid credentials");
-        }
-        else {
-            localStorage.setItem("authToken", json.authToken);
+        // if (!json.success) {
+        //     alert("Enter valid credentials");
+        // }
+        // else {
+        //     localStorage.setItem("authToken", json.authToken);
+        //     localStorage.setItem("userEmail",data.email);
+        //     console.log(localStorage.getItem("authToken"));
+        //     navigate("/")
+        // }
+        localStorage.setItem("authToken", json.authToken);
             localStorage.setItem("userEmail",data.email);
             console.log(localStorage.getItem("authToken"));
             navigate("/")
-        }
     }
 
     const handleChange = (event) => {
